@@ -219,10 +219,10 @@
         }
       ],
       "type": "prompt",
+      },
       {
           "type": "newline"
-      },
-    }
+      }
   ],
   "console_title_template": "{{ .Shell }} in {{ .Folder }}",
   "final_space": true,
