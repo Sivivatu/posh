@@ -218,7 +218,10 @@
           "type": "time"
         }
       ],
-      "type": "rprompt"
+      "type": "prompt",
+      {
+          "type": "newline"
+      },
     }
   ],
   "console_title_template": "{{ .Shell }} in {{ .Folder }}",
