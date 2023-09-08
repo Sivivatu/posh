@@ -219,9 +219,6 @@
         }
       ],
       "type": "rprompt",
-      },
-      {
-          "type": "newline"
       }
   ],
   "console_title_template": "{{ .Shell }} in {{ .Folder }}",
