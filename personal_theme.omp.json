@@ -221,8 +221,34 @@
       "type": "rprompt"
       },
       {
-          "newline": true
-      }
+        "type": "prompt",
+        "alignment": "left",
+        "newline": true,
+        "segments": [
+            {
+                "background": "transparent",
+                "foreground": "p:yellow",
+                "properties": {
+                    "display_mode": "files",
+                    "fetch_version": true,
+                    "fetch_virtual_env": true
+                },
+                "style": "plain",
+                "template": "\ue235 <{{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }}>",
+                "type": "python"
+            },
+            {
+                "foreground": "#FFD54F",
+                "properties": {
+                    "always_enabled": true
+                },
+                "style": "plain",
+                "template": " {{if .Root}}#{{else}}${{end}}",
+                "type": "text"
+            }
+        ]
+       
+    }
   ],
   "console_title_template": "{{ .Shell }} in {{ .Folder }}",
   "final_space": true,
