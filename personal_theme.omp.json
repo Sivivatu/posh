@@ -218,8 +218,7 @@
           "type": "time"
         }
       ],
-      "type": "rprompt",
-      "newline": false
+      "type": "rprompt"
       },
       {
         "type": "prompt",
